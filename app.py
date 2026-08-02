@@ -42,11 +42,34 @@ st.markdown(
     }
 }
 
+   h2, h3 {
+    color: #2563EB;
+    font-weight: 600;
+    animation: slideRight 1s ease;
+}
 
-    h2, h3 {
-        color: #2563EB;
-        font-weight: 600;
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
     }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+    
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 
     p, label {
@@ -67,11 +90,31 @@ st.markdown(
 
 
     div[data-testid="metric-container"] {
-        background-color: #FFFFFF;
-        border-radius: 12px;
-        padding: 15px;
-        box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+div[data-testid="metric-container"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+.block-container {
+    animation: slideUp 1s ease-in;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
     </style>
