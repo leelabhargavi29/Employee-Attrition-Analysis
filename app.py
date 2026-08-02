@@ -87,7 +87,9 @@ st.markdown(
         border-radius:15px;
         box-shadow:0px 4px 12px rgba(0,0,0,0.08);
         margin-bottom:20px;
+        animation: fadeIn 1.5s ease-in;
     ">
+
     <h1 style="color:#0F172A;">
     Employee Attrition Analysis
     </h1>
@@ -97,6 +99,19 @@ st.markdown(
     </p>
 
     </div>
+
+    <style>
+    @keyframes fadeIn {
+        from {
+            opacity:0;
+            transform:translateY(-20px);
+        }
+        to {
+            opacity:1;
+            transform:translateY(0);
+        }
+    }
+    </style>
     """,
     unsafe_allow_html=True
 )
