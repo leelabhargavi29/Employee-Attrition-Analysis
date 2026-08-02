@@ -88,12 +88,13 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 @st.cache_data
 def load_data():
-    return pd.read_csv(
-        "dataset/WA_Fn-UseC_-HR-Employee-Attrition.csv"
-    )
+    if os.path.exists("dataset/WA_Fn-UseC_-HR-Employee-Attrition.csv"):
+        return pd.read_csv("dataset/WA_Fn-UseC_-HR-Employee-Attrition.csv")
+    
+    else:
+        return pd.read_csv("WA_Fn-UseC_-HR-Employee-Attrition.csv")
 
 try:
     df = load_data()
