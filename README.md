@@ -68,13 +68,13 @@ Employee Attrition Analysis is a Machine Learning project that predicts whether 
 - Statistical Summary
 - EDA Charts
 - Classification Report
-- Prediction Results
+- Streamlit Dashboard
 
 🚀 Future Scope
 
 - Improve prediction accuracy using advanced Machine Learning models.
 - Deploy the model as a web application.
-- Build an interactive HR analytics dashboard.
+- Developed an interactive HR analytics dashboard using Streamlit for visualization and model demonstration.
 - Integrate real-time employee data for continuous prediction.
 
 👩‍💻 Author
@@ -83,8 +83,6 @@ Pedavalli Leela Bhargavi,
 
 B.Tech (Computer Science Engineering - Data Science).
 
-
-
-## ⭐ Acknowledgement
+⭐ Acknowledgement
 
 This project was completed as part of a Data Science Internship to gain practical experience in Machine Learning, HR Analytics, and predictive modeling.
