@@ -25,10 +25,22 @@ st.markdown(
 
 
     h1 {
-        color: #0F172A;
-        font-size: 42px;
-        font-weight: 700;
+    color: #1D4ED8;
+    font-size: 42px;
+    font-weight: 700;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
     h2, h3 {
